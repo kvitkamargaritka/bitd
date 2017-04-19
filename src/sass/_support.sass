@@ -1,6 +1,15 @@
 .support
+  position: relative
   display: flex
   align-items: center
+
+  &:after
+    position: absolute
+    content: ''
+    top: 12px
+    right: -16px
+    height: 17px
+    border-right: 1px dotted #b0b5ba
 
   &__descr
     padding-right: 6px

@@ -12,6 +12,7 @@ $bgGreenLight: #3dc23f
 $bgRed: #e23430
 $bgRedLight: #e2413d
 
+
 +font("opensans-light", opensans-light)
 +font("opensans-regular", opensans-regular)
 +font("opensans-bold", opensans-bold)
@@ -39,11 +40,16 @@ h1
 
 	&.is-fz-20
 		font-size: 20px
+		letter-spacing: -.4px
 		+h600
 
 h2
 	font-size: 20px
 	+h600
+
+	&.is-fz-18
+		font-size: 18px
+		letter-spacing: -.4px
 
 body
 	font-size: 13px
@@ -58,9 +64,10 @@ a:visited,
 a:active,
 a:focus
 	color: $textBlue
-	display: flex
+	display: inline-flex
 	text-decoration: none
 	cursor: pointer
+	transition: all .3s ease-in-out
 
 .out
 	width: 400px
@@ -127,7 +134,8 @@ a:focus
 			top: 9px
 
 .articles
-	margin-top: 39px
+	letter-spacing: -.3px
+	margin-top: 32px
 	display: flex
 	span
 		padding-right: 6px
@@ -135,10 +143,12 @@ a:focus
 .info
 
 	&__title
-		padding-bottom: 20px
+		margin-bottom: 12px
+		letter-spacing: -.4px
 
 	&__descr
 		font-size: 13px
+		line-height: 20px
 		color: $textBlack
 		+h300
 
@@ -153,10 +163,7 @@ a:focus
 		+h600
 
 .view-all
-	margin: 20px 0 40px
+	margin: 19px 0 32px
 
-.block
-	padding: 23px 30px
-	margin-bottom: 35px
-	width: 300px
-	border: 1px solid #dcdee0
+.aside
+	margin-left: 30px

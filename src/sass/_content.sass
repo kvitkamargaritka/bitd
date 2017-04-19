@@ -1,5 +1,21 @@
 .content
-  padding: 33px 0 90px
+  padding: 33px 0 84px
+
+  &.is-inner-1
+
+    .content
+
+      &__wrap
+        justify-content: space-between
+
+      &__left
+        width: 70%
+
+      &__right
+        width: 30%
+
+      &__text
+        line-height: 20px
 
   &__wrap
     width: 100%
@@ -12,7 +28,7 @@
     box-sizing: border-box
 
   &__left
-    margin-right: 30px
+    margin-right: 31px
 
   &__title
     display: flex
@@ -20,7 +36,6 @@
 
   &__text
     margin-bottom: 32px
-    display: flex
 
     &.is-grey
       color: $textGrey
