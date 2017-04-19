@@ -1,0 +1,55 @@
+.btn
+  padding: 0 57px
+  height: 36px
+  line-height: 36px
+  background-color: $bgGrey
+  font-size: 13px
+  display: inline-flex
+  text-transform: uppercase
+  white-space: nowrap
+  transition: all .3s ease-in-out
+  cursor: pointer
+  +h400
+
+  &.is-small
+    height: 33px
+    line-height: 33px
+
+  &.is-medium
+    height: 40px
+    line-height: 40px
+    font-size: 14px
+
+  &.is-large
+    padding: 0 49px
+    height: 54px
+    line-height: 54px
+    font-size: 16px
+
+  &.is-block
+    width: 100%
+    justify-content: center
+
+  &.is-blue,
+  &.is-green,
+  &.is-red
+    color: $textWhite
+    +h700
+
+  &.is-blue
+    background-color: $bgBlue
+
+    &:hover
+      background-color: $bgBlueLight
+
+  &.is-green
+    background-color: $bgGreen
+
+    &:hover
+      background-color: $bgGreenLight
+
+  &.is-red
+    background-color: $bgRed
+
+    &:hover
+      background-color: $bgRedLight

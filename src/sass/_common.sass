@@ -1,0 +1,162 @@
+//variables
+$textBlue: #0f74ce
+$textWhite: #fff
+$textBlack: #333436
+$textGrey: #8b8e91
+$bgBlue: #147dd9
+$bgBlueLight: #228ae5
+$bgGrey: #f5f6f7
+$bgGreyLight: #fafbfc
+$bgGreen: #41bb43
+$bgGreenLight: #3dc23f
+$bgRed: #e23430
+$bgRedLight: #e2413d
+
++font("opensans-light", opensans-light)
++font("opensans-regular", opensans-regular)
++font("opensans-bold", opensans-bold)
++font("opensans-semibold", opensans-semibold)
+
+=h300
+	font-family: "opensans-light", Helvetica, Arial, sans-serif
+
+=h400
+	font-family: "opensans-regular", Helvetica, Arial, sans-serif
+
+=h600
+	font-family: "opensans-semibold", Helvetica, Arial, sans-serif
+
+=h700
+	font-family: "opensans-bold", Helvetica, Arial, sans-serif
+
+h1
+	font-size: 48px
+	+h300
+
+	&.is-fz-24
+		font-size: 24px
+		+h600
+
+	&.is-fz-20
+		font-size: 20px
+		+h600
+
+h2
+	font-size: 20px
+	+h600
+
+body
+	font-size: 13px
+	line-height: 1.4
+	color: $textBlack
+	+h300
+
+// common blocks
+
+a,
+a:visited,
+a:active,
+a:focus
+	color: $textBlue
+	display: flex
+	text-decoration: none
+	cursor: pointer
+
+.out
+	width: 400px
+	margin: 50px auto
+	color: #55094f
+
+	h1
+		border-bottom: 2px solid #000
+
+	ul
+		margin-top: 30px
+
+	li
+		margin: 10px 0
+
+	a
+		font-size: 15px
+		color: #55094f
+		+h600
+
+		&:hover
+			text-decoration: underline
+.atoms
+	width: 1110px
+	margin: 10px auto
+
+.atom
+	margin: 10px 0
+	padding: 10px
+	border: 1px solid #2c2c2c
+
+.i-semibold
+	+h600
+
+.i-text-upper
+	text-transform: uppercase
+
+.copyright
+	font-size: 13px
+	color: $textBlack
+	+h300
+
+.comment
+	display: flex
+
+	&__text
+		width: 255px
+		position: relative
+		padding: 15px
+		margin-left: 15px
+		border: 1px solid #dcdee0
+
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			left: -20px
+			top: 10px
+			border: 10px solid transparent
+			border-right: 10px solid #dcdee0
+
+		&:after
+			border-right: 10px solid $textWhite
+			top: 9px
+
+.articles
+	margin-top: 39px
+	display: flex
+	span
+		padding-right: 6px
+
+.info
+
+	&__title
+		padding-bottom: 20px
+
+	&__descr
+		font-size: 13px
+		color: $textBlack
+		+h300
+
+.items
+
+	&__title
+		margin-bottom: 12px
+		display: inline-flex
+		font-size: 20px
+		color: $textBlack
+		letter-spacing: -.3px
+		+h600
+
+.view-all
+	margin: 20px 0 40px
+
+.block
+	padding: 23px 30px
+	margin-bottom: 35px
+	width: 300px
+	border: 1px solid #dcdee0

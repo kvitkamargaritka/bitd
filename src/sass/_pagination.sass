@@ -1,0 +1,25 @@
+.pagination
+  margin: 25px 0
+
+  &__list
+    display: flex
+    flex-direction: row
+
+  &__el
+    margin: 0 2px
+    padding: 0 10px
+    height: 28px
+    line-height: 28px
+    background-color: $bgGreyLight
+    transition: all .3s ease-in-out
+    cursor: pointer
+
+    &:hover
+      background-color: #0f74ce
+
+      .pagination__link
+        color: $textWhite
+
+  &__link
+    color: $textBlue
+    transition: all .3s ease-in-out

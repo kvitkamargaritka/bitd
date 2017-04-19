@@ -1,0 +1,33 @@
+.breadcrumbs
+  background-color: $bgGrey
+  padding: 13px 0
+
+  &__list
+    position: relative
+    display: flex
+    flex-direction: row
+
+  &__el
+    padding-right: 20px
+
+    &:before,
+    &:after
+      position: absolute
+      left: 44px
+      content: ''
+      width: 1px
+      height: 6px
+      background-color: #aaaeb2
+
+    &:before
+      top: 5px
+      transform: rotate(-45deg)
+
+    &:after
+      bottom: 3px
+      transform: rotate(45deg)
+
+    &:last-child
+      a
+        color: $textBlack
+        pointer-events: none
