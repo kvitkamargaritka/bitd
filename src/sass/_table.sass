@@ -1,10 +1,19 @@
 .table
 
-  &.is-test
+  &.is-third
 
     td
       &:last-child
         width: 28%
+
+  &.is-bg-grey
+    tr
+      &:nth-child(odd)
+        background-color: #fff
+
+      &:nth-child(even)
+        background-color: $bgGreyLight
+
 
   th
     padding-left: 20px

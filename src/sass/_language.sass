@@ -1,0 +1,49 @@
+.language-wrap
+  position: relative
+  width: 25px
+  height: 25px
+
+.language
+  position: absolute
+  top: 0
+  right: 0
+  display: inline-flex
+  flex-direction: column
+  height: 24px
+  border: 1px solid transparent
+  overflow: hidden
+  z-index: 10
+
+  &.is-open
+    height: auto
+    border-color: $bgBlueLight
+
+    .language
+
+      &__el
+        border-bottom: 1px solid $greyDark
+
+        &:hover
+          border-bottom-color: $bgBlueLight
+
+        &:last-child
+          border-bottom: none
+
+  &__el
+    display: flex
+    flex: 1
+    order: 2
+    min-height: 24px
+    background-color: white
+
+    &:hover
+      background-color: $bgBlueLight
+
+    &.is-active
+      order: 1
+
+  &__link
+    display: flex
+
+  &__img
+    display: flex

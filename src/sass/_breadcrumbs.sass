@@ -3,11 +3,11 @@
   padding: 8px 0
 
   &__list
-    position: relative
     display: flex
     flex-direction: row
 
   &__el
+    position: relative
     padding-right: 27px
 
     &:before,
@@ -31,3 +31,7 @@
       a
         color: $textBlack
         pointer-events: none
+
+      &:after,
+      &:before
+        display: none

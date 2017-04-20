@@ -1,4 +1,6 @@
 //variables
+$greyDark: #dcdee0
+$greenLight: #32e05f
 $textBlue: #0f74ce
 $textWhite: #fff
 $textBlack: #333436
@@ -11,6 +13,8 @@ $bgGreen: #41bb43
 $bgGreenLight: #3dc23f
 $bgRed: #e23430
 $bgRedLight: #e2413d
+$bgOrange: #ffae20
+
 
 
 +font("opensans-light", opensans-light)
@@ -31,6 +35,7 @@ $bgRedLight: #e2413d
 	font-family: "opensans-bold", Helvetica, Arial, sans-serif
 
 h1
+	letter-spacing: -.4px
 	font-size: 48px
 	+h300
 
@@ -44,12 +49,16 @@ h1
 		+h600
 
 h2
+	letter-spacing: -.4px
 	font-size: 20px
 	+h600
 
 	&.is-fz-18
 		font-size: 18px
 		letter-spacing: -.4px
+
+	&.is-fz-16
+		font-size: 16px
 
 body
 	font-size: 13px
@@ -105,33 +114,17 @@ a:focus
 .i-text-upper
 	text-transform: uppercase
 
+.i-text-green
+	color: $greenLight
+
+.i-text-right
+	text-align: right
+
 .copyright
 	font-size: 13px
 	color: $textBlack
 	+h300
 
-.comment
-	display: flex
-
-	&__text
-		width: 255px
-		position: relative
-		padding: 15px
-		margin-left: 15px
-		border: 1px solid #dcdee0
-
-		&:before,
-		&:after
-			content: ''
-			position: absolute
-			left: -20px
-			top: 10px
-			border: 10px solid transparent
-			border-right: 10px solid #dcdee0
-
-		&:after
-			border-right: 10px solid $textWhite
-			top: 9px
 
 .articles
 	letter-spacing: -.3px
@@ -167,3 +160,12 @@ a:focus
 
 .aside
 	margin-left: 30px
+
+.banner
+	margin: 35px 0
+	
+.logo
+	
+	&.is-content
+		max-height: 45px
+		margin-right: 15px
