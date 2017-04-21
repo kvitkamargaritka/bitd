@@ -27,9 +27,8 @@
     .list
 
       &__link
-        font-size: 13px
         color: $textBlack
-        +h300
+        letter-spacing: -.3px
 
   &.is-unstyled
 
@@ -40,6 +39,21 @@
 
         &:after
           display: none
+
+  &.is-border
+
+    .list
+
+      &__el
+        padding-bottom: 20px
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        align-items: center
+        border-bottom: 1px solid $greyDark
+
+        .table
+          margin-bottom: 20px
 
   &__el
     position: relative
