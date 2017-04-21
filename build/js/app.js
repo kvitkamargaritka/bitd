@@ -80,7 +80,7 @@ $( document ).ready(function() {
     os = "N/A"; // ???? OS ???
   }
 
-  $('#detected-os').html(os) && $('#detected-os-img').attr("src", "../img/"+os_img);
+  $('#detected-os').html(os) && $('#detected-os-img').attr("src", "img/"+os_img);
 
   //Language
   $('.language').click(function(){
