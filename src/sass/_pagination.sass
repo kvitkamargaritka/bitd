@@ -1,5 +1,7 @@
 .pagination
-  margin: 25px 0
+  display: flex
+  justify-content: center
+  margin: 25px auto
 
   &__list
     display: flex
@@ -7,18 +9,43 @@
 
   &__el
     margin: 0 2px
-    padding: 0 10px
+    width: 28px
     height: 28px
-    line-height: 28px
+    line-height: 25px
+    text-align: center
     background-color: $bgGreyLight
+    border: 1px solid transparent
     transition: all .3s ease-in-out
     cursor: pointer
 
+    &:first-child,
+    &:last-child
+      width: auto
+      padding: 0 12px
+
+
     &:hover
-      background-color: #0f74ce
+      background-color: white
+      border-color: $textBlue
 
       .pagination__link
-        color: $textWhite
+        color: $textBlue
+
+    &.is-active
+      background-color: $textBlue
+
+      .pagination__link
+        color: #fff
+
+    &.is-more
+      padding: 0 3px
+      width: auto
+      background-color: transparent
+      +h700
+
+      &:hover
+        border-color: transparent
+        cursor: default
 
   &__link
     color: $textBlue

@@ -14,13 +14,25 @@
       &:nth-child(even)
         background-color: $bgGreyLight
 
+  &.is-last-centred
+    th,
+    td
+      &:first-child
+        padding-left: 20px
+
+      &:last-child
+        width: 17%
+        text-align: center
+
   th
-    padding-left: 20px
     text-align: left
     text-transform: uppercase
     background-color: $bgGrey
     color: $textBlack
     +h600
+
+    &:first-child
+      padding-left: 10px
 
   tr
     height: 28px
