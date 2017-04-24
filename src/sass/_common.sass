@@ -15,7 +15,6 @@ $bgRed: #e23430
 $bgRedLight: #e2413d
 $bgOrange: #ffae20
 
-
 +font("opensans-light", opensans-light)
 +font("opensans-regular", opensans-regular)
 +font("opensans-bold", opensans-bold)
@@ -35,8 +34,7 @@ $bgOrange: #ffae20
 
 h1
 	letter-spacing: -.4px
-	font-size: 48px
-	+h300
+	font-size: 46px
 
 	&.is-fz-24
 		font-size: 24px
@@ -116,8 +114,12 @@ img
 .logo
 
 	&.is-content
-		max-height: 45px
 		margin-right: 15px
+
+		.logo
+
+			&__img
+				max-height: 45px
 
 .list-title
 	margin-bottom: 7px
@@ -126,6 +128,9 @@ img
 	margin: 12px 0 25px 0
 	border-top: none
 	border-bottom: 1px solid $greyDark
+
+.update-drivers
+	+h400
 	
 .i-semibold
 	+h600

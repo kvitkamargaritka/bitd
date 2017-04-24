@@ -124,14 +124,15 @@
                   Your OS:
                 </span>
                 <select class="select select--os">
-                  <option value="Windows 2000">Windows 2000</option>
-                  <option value="Windows XP">Windows XP</option>
-                  <option value="Windows Vista">Windows Vista</option>
-                  <option value="Windows 7" selected>Windows 7</option>
-                  <option value="Windows 8">Windows 8</option>
-                  <option value="Windows 8.1">Windows 8.1</option>
-                  <option value="Windows 10">Windows 10</option>
-                  <option value="Mac OS">Mac OS</option>
+                  <option data-os="Select OS" value="Select OS">Select OS</option>
+                  <option data-os="Windows 2000" value="Windows 2000">Windows 2000</option>
+                  <option data-os="Windows XP" value="Windows XP">Windows XP</option>
+                  <option data-os="Windows Vista" value="Windows Vista">Windows Vista</option>
+                  <option data-os="Windows 7" value="Windows 7">Windows 7</option>
+                  <option data-os="Windows 8" value="Windows 8">Windows 8</option>
+                  <option data-os="Windows 8.1" value="Windows 8.1">Windows 8.1</option>
+                  <option data-os="Windows 10" value="Windows 10">Windows 10</option>
+                  <option data-os="Mac OS" value="Mac OS">Mac OS</option>
                 </select>
               </div>
               <div class="detection-os__right">
@@ -402,34 +403,36 @@
               </a>
             </div>
             <div class="aside__box">
-              <h2 class="title is-fz-16">Latest Updated Drivers</h2>
-              <ul class="list">
-                <li class="list__el">
-                  <a href="#" class="list__link">
-                    Fxinput1_3.dll - Microsoft Common Controller
-                  </a>
-                </li>
-                <li class="list__el">
-                  <a href="#" class="list__link">
-                    msvcr120.dll - Microsoft® C Runtime Library
-                  </a>
-                </li>
-                <li class="list__el">
-                  <a href="#" class="list__link">
-                    d3dx9_43.dll - Direct3D 9 Extensions
-                  </a>
-                </li>
-                <li class="list__el">
-                  <a href="#" class="list__link">
-                    msvcr100.dll - Microsoft® C Runtime Library
-                  </a>
-                </li>
-                <li class="list__el">
-                  <a href="#" class="list__link">
-                    kbdit.dll - Microsoft® Windows® OS
-                  </a>
-                </li>
-              </ul>
+              <div class="update-drivers">
+                <h2 class="title is-fz-16">Latest Updated Drivers</h2>
+                <ul class="list">
+                  <li class="list__el">
+                    <a href="#" class="list__link">
+                      Fxinput1_3.dll - Microsoft Common Controller
+                    </a>
+                  </li>
+                  <li class="list__el">
+                    <a href="#" class="list__link">
+                      msvcr120.dll - Microsoft® C Runtime Library
+                    </a>
+                  </li>
+                  <li class="list__el">
+                    <a href="#" class="list__link">
+                      d3dx9_43.dll - Direct3D 9 Extensions
+                    </a>
+                  </li>
+                  <li class="list__el">
+                    <a href="#" class="list__link">
+                      msvcr100.dll - Microsoft® C Runtime Library
+                    </a>
+                  </li>
+                  <li class="list__el">
+                    <a href="#" class="list__link">
+                      kbdit.dll - Microsoft® Windows® OS
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div><!-- end aside__box -->
             <div class="aside__box">
               <h2 class="title is-fz-16">Testimonials</h2>
@@ -502,7 +505,7 @@
           </div>
         </div>
         <div class="footer__right">
-          <ul class="list is-horizontal is-black">
+          <ul class="list is-horizontal is-black is-light">
             <li class="list__el">
               <a href="#" class="list__link">Home</a>
             </li>
